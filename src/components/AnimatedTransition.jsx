@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Box } from '@mui/material';
 
 const pageVariants = {
   initial: {
@@ -25,16 +26,22 @@ const pageTransition = {
 
 const AnimatedTransition = ({ children }) => {
   return (
-    <motion.div
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageVariants}
-      transition={pageTransition}
-      className="h-full w-full"
-    >
-      {children}
-    </motion.div>
+    <Box sx={{ width: '100%', height: '100%' }}>
+      <motion.div
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageVariants}
+        transition={pageTransition}
+        style={{
+          width: '100%',
+          height: '100%',
+          position: 'relative'
+        }}
+      >
+        {children}
+      </motion.div>
+    </Box>
   );
 };
 
