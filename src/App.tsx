@@ -11,11 +11,11 @@ import { AuthProvider } from "./contexts/AuthContext";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-import Projects from "./pages/Projects";
-import ProjectDetails from "./pages/ProjectDetails";
-import KanbanBoard from "./pages/KanbanBoard";
-import TaskDetails from "./pages/TaskDetails";
-import TeamManagement from "./pages/TeamManagement";
+import Projects from "./pages/Projects.jsx";
+import ProjectDetails from "./pages/ProjectDetails.jsx";
+import KanbanBoard from "./pages/KanbanBoard.jsx";
+import TaskDetails from "./pages/TaskDetails.jsx";
+import TeamManagement from "./pages/TeamManagement.jsx";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
